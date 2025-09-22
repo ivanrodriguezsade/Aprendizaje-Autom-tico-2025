@@ -16,7 +16,7 @@ Aquí encontrarás una lista de las actividades y ejercicios completados, con en
 
 * **Actividad 1: ANALISIS REGRESION LINEAL: PIB DE PAISES DE MUNDO**
     * Contiene ejercicio de regresion lineal.
-    * [Enlace a la carpeta de la actividad 1](analisis_pib/Exploracion de datos pib.ipynb)
+    * [Enlace a la carpeta de la actividad 1](analisis_pib)
 
 * **Actividad 2: ANALISIS REGRESION LOGISITICA: USO DE SISTEMAS OPERATIVOS EM WEB**
     * Esta actividad se enfoca en verificar que sucede cuando realizamos la clasificación (o predicción) de tipo de usuario cuando se altera los valores de las variables.
