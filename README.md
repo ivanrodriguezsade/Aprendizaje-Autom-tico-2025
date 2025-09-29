@@ -20,6 +20,6 @@ Aquí encontrarás una lista de las actividades y ejercicios completados, con en
 
 * **Actividad 2: ANALISIS REGRESION LOGISITICA: USO DE SISTEMAS OPERATIVOS EM WEB**
     * Esta actividad se enfoca en verificar que sucede cuando realizamos la clasificación (o predicción) de tipo de usuario cuando se altera los valores de las variables.
-    * [Enlace a la carpeta del proyecto 1](<ruta_a_tu_carpeta>)
+    * [Enlace a la carpeta de la actividad 2](sistemas_operativos_en_web)
 --------
 
