@@ -1,4 +1,4 @@
-name: analisis_PIB_paises_del_mundo
+name: Actividades_ML
 channels:
   - conda-forge
 dependencies:
