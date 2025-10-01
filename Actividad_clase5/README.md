@@ -8,16 +8,14 @@ Hemos utilizado el conjunto de datos de Cáncer de Mama de Wisconsin (load_breas
 
 Metodología
 
-    Datos: Dataset de Cáncer de Mama de Wisconsin (569 instancias, 30 características).
+   Datos: Dataset de Cáncer de Mama de Wisconsin (569 instancias, 30 características).
 
-    División: 70% para entrenamiento, 30% para prueba.
+   División: 70% para entrenamiento, 30% para prueba.
 
-    Preprocesamiento: Se aplicó escalado de características (StandardScaler) exclusivamente al modelo K-NN, ya que este algoritmo se basa en la distancia y es altamente sensible a la escala de las variables de entrada. El Árbol de Decisión utilizó los datos sin escalar.
+   Preprocesamiento: Se aplicó escalado de características (StandardScaler) exclusivamente al modelo K-NN, ya que este algoritmo se basa en la distancia y es altamente sensible a la escala de las variables de entrada. El Árbol de Decisión utilizó los datos sin escalar.
 
-    Parámetros:
-
+   Parámetros:
         Árbol de Decisión: Profundidad Máxima (max_depth) = 5.
-
         K-NN: Número de Vecinos (n_neighbors) = 5.
 
 2. Resultados Cuantitativos y Métricas
@@ -38,10 +36,8 @@ Matrices de Confusión
 ### Árbol de Decisión
 ![Matriz de Confusión para el Árbol de Decisión](matriz_dt.png)
 
-Incluye aquí la imagen de la Matriz de Confusión del Árbol de Decisión.
-
 ### K-NN
-![Matriz de Confusión para ](matriz_k-nn.png)
+![Matriz de Confusión para K-NN](matriz_k-nn.png)
 
 3. Visualizaciones Clave
 
@@ -50,7 +46,7 @@ A. Visualización del Árbol de Decisión
 El gráfico muestra las reglas aprendidas por el modelo. La ruta desde la raíz hasta una hoja representa la secuencia de decisiones tomadas para clasificar un tumor como Benigno o Maligno.
 
 ### Visualización del Árbol de Decisión
-![Matriz de Confusión para el Árbol de Decisión](arbol.png)
+![ver Árbol de Decisión](arbol.png)
 
 B. Frontera de Decisión de K-NN (2D Ilustrativo)
 
@@ -59,7 +55,7 @@ Este gráfico ilustra cómo K-NN divide el espacio de datos, basándose en la pr
 Se utilizó una proyección 2D (con las primeras dos características escaladas) solo con fines ilustrativos, ya que el modelo real opera en 30 dimensiones.
 
 ### Frontera de Decisión
-![Matriz de Confusión para el Árbol de Decisión](frontera_de_decision_k-nn.png)
+![Frontera de Decisión para k-nn](frontera_de_decision_k-nn.png)
 
 4. Análisis Comparativo
 
@@ -76,9 +72,9 @@ Análisis y conclusión final:
 
 El modelo K-NN (0.96) obtuvo una precisión ligeramente superior al Árbol de Decisión (0.95). Sin embargo, en un problema médico, la métrica más crítica no es la precisión general, sino el Recall de la Clase Maligna (Clase 1), ya que busca minimizar los Falsos Negativos (no detectar un cáncer real).
 
-    Recall (Clase 1 - Maligno): K-NN obtuvo un Recall del 0.97 (97%), mientras que el Árbol de Decisión obtuvo un 0.96 (96%).
+Recall (Clase 1 - Maligno): K-NN obtuvo un Recall del 0.97 (97%), mientras que el Árbol de Decisión obtuvo un 0.96 (96%).
 
-    Conclusión de Métricas: K-NN demostró una capacidad de detección marginalmente superior para identificar correctamente los tumores malignos dentro de la muestra de prueba, lo que lo convierte en el modelo con mejor rendimiento puro.
+Conclusión de Métricas: K-NN demostró una capacidad de detección marginalmente superior para identificar correctamente los tumores malignos dentro de la muestra de prueba, lo que lo convierte en el modelo con mejor rendimiento puro.
 
 2. La Métrica Crítica y el Impacto Clínico (Análisis de la matriz):
 
@@ -88,4 +84,4 @@ La ventaja de K-NN en el Recall (97% vs 96%) significa que, aunque la diferencia
 
 A pesar de que K-NN ofrece el mejor rendimiento estadístico y es el modelo preferido si solo consideramos la tasa de error:
 
-    Recomendación: Para una implementación en un entorno real, el Árbol de Decisión es a menudo el modelo recomendado. Su principal fortaleza es la alta interpretabilidad. La capacidad de proporcionar reglas claras y lógicas para un diagnóstico ("Maligno porque el radio promedio es mayor a X") genera mayor confianza y es esencial para la validación clínica por parte de un médico.
+Recomendación: Para una implementación en un entorno real, el Árbol de Decisión es a menudo el modelo recomendado. Su principal fortaleza es la alta interpretabilidad. La capacidad de proporcionar reglas claras y lógicas para un diagnóstico ("Maligno porque el radio promedio es mayor a X") genera mayor confianza y es esencial para la validación clínica por parte de un médico.
