@@ -19,7 +19,12 @@ Aquí encontrarás una lista de las actividades y ejercicios completados, con en
     * [Enlace a la carpeta de la actividad 1](analisis_pib)
 
 * **Actividad 2: ANALISIS REGRESION LOGISITICA: USO DE SISTEMAS OPERATIVOS EM WEB**
-    * Esta actividad se enfoca en verificar que sucede cuando realizamos la clasificación (o predicción) de tipo de usuario cuando se altera los valores de las variables.
+    * Esta actividad se enfoca en verificar que sucede cuando realizamos la clasificación (o predicción) de tipo de usuario cuando se altera los valores de las    variables.
     * [Enlace a la carpeta de la actividad 2](sistemas_operativos_en_web)
+
+* **Actividad Clase 5: COMPARACIÓN DE CLASIFICADORES: CÁNCER DE MAMA (Arbol de decisión vs K-NN)**
+    * Esta actividad implementa y compara el rendimiento y la interpretabilidad de los modelos **Árbol de Decisión** y **K-Vecinos Más Cercanos** sobre el dataset de Cáncer de Mama de Wisconsin. Se incluye análisis de métricas avanzadas y visualizaciones.
+
+    * [Enlace a la carpeta de la actividad 5](Actividad_clase5)
 --------
 
